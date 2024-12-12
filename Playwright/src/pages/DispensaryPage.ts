@@ -20,17 +20,17 @@ export default class DispensaryPage {
   constructor(page: Page) {
     this.page = page;
     this.dispensary = {
-      dispensaryLink: page.locator('a[href="#/Dispensary"]'),
-      activateCounter: page.locator("//a[contains(text(),'Counter')]"),
-      counterSelection: page.locator('//div[@class="counter-item"]'),
-      counterName: page.locator('//div[@class="counter-item"]//h5'),
-      activatedCounterInfo: page.locator(`div.mt-comment-info`),
+      dispensaryLink: page.locator(''),
+      activateCounter: page.locator(""),
+      counterSelection: page.locator(''),
+      counterName: page.locator(''),
+      activatedCounterInfo: page.locator(``),
       deactivateCounterButton: page.locator(
-        `//button[contains(text(),'Deactivate Counter')]`
+        ``
       ),
-      titleName: page.locator('//span[@class="caption-subject"]'),
-      name: page.locator('(//div[@class="col-sm-4 col-md-3"]//label//span)[1]'),
-      prescription: page.locator("//a[contains(text(),' Prescription ')]"),
+      titleName: page.locator(''),
+      name: page.locator(''),
+      prescription: page.locator(""),
     };
   }
 
