@@ -14,18 +14,18 @@ export class LoginPage {
 
   constructor(page: Page) {
     this.page = page;
-    this.usernameInput = page.locator(`#username_id`);
-    this.passwordInput = page.locator(`#password`);
-    this.loginButton = page.locator(`#login`);
+    this.usernameInput = page.locator(``);
+    this.passwordInput = page.locator(``);
+    this.loginButton = page.locator(``);
     this.loginErrorMessage = page.locator(
-      `//div[contains(text(),"Invalid credentials !")]`
+      ``
     );
-    this.admin = page.locator('//li[@class="dropdown dropdown-user"]');
-    this.logOut = page.locator("//a[text() = ' Log Out ']");
+    this.admin = page.locator('');
+    this.logOut = page.locator("");
   }
 
   async navigate() {
-    await this.page.goto("/");
+    await this.page.goto("");
   }
 
   /**
